@@ -1,4 +1,4 @@
-
+/*CSS RESET*/
 
 /* Box sizing rules */
 *,
@@ -73,4 +73,210 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+
+/*UTILITY CLASSES*/
+
+:root{
+  --clr-primary-strong-cyan: hsl(171, 66%, 44%);
+  --clr-primary-light-blue: hsl(233, 100%, 69%);
+  --clr-neutral-darkgray-blue: hsl(210, 10%, 33%);
+  --clr-neutral-grayblue: hsl(201, 11%, 66%);
+
+  font-size: 18px;
+
+  --ff: 'Bai Jamjuree', sans-serif;
+  --fw-400: 400;
+  --fw-600: 600;
+
+}
+
+html {
+  font-family: var(--ff);
+}
+
+/*Styling*/
+
+/*header*/
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("images/bg-header-desktop.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  margin: auto;
+  height: 5rem;
+  margin-top: 5rem;
+  margin-bottom: 2.5rem;
+}
+
+.title {
+  text-align: center;
+}
+
+.heading-text {
+  margin-bottom: 2rem;
+}
+
+p {
+  color: var(--clr-neutral-grayblue);
+}
+
+.header-buttons {
+  text-align: center;
+  margin-bottom: 7.5rem;
+}
+
+/*buttons*/
+
+.ios-download-btn {
+  border-radius: 20px;
+  border: none;
+  background-color: var(--clr-primary-strong-cyan);
+  font-size: .9rem;
+  color: white;
+  padding: .5rem 2rem;
+  box-shadow: 0px 3px 10px var(--clr-primary-strong-cyan);
+  margin-right: .5rem;
+}
+
+.mac-download-btn {
+  border-radius: 20px;
+  border: none;
+  background-color: var(--clr-primary-light-blue);
+  font-size: .9rem;
+  color: white;
+  padding: .5rem 2rem;
+  box-shadow: 0px 3px 10px var(--clr-primary-light-blue);
+  margin-left: .5rem;
+}
+
+/*Snippets Section*/
+
+.snippets-sec {
+  margin-bottom: 5rem;
+}
+
+.snippets-heading{
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.snippets-main {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+}
+
+.snippets-feat-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 2.5rem;
+}
+
+/*Clipboard Section*/
+
+.clipboard-sec {
+  text-align: center;
+}
+
+.clipboard-sec-subtitle {
+  margin-bottom: 2.5rem;
+}
+
+.clipboard-sec-devices-img {
+  margin-bottom: 2.5rem;
+}
+
+.clipboard-sec-text {
+  margin-bottom: 2.5rem;
+}
+
+/* Features Section */
+
+.features-sec {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  margin-bottom: 7.5rem;
+}
+
+.features-blacklists, .features-snippets, .features-preview{
+  width: 25%;
+}
+
+.features-img{
+  margin: 0rem auto 1.5rem auto;
+}
+
+
+.features-sec-text {
+  font-size: .9rem;
+}
+
+/*Social Proof Section*/
+
+.social-proof-sec{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 7.5rem;
+}
+
+.worked-with-logo{
+  margin: 0rem 4rem;
+}
+
+/*Download Section*/
+
+.download-sec{
+  text-align: center;
+  margin-bottom: 7.5rem;
+}
+
+.download-sec-text{
+  margin-bottom: 2.5rem;
+}
+
+/*footer*/
+
+footer{
+  display: grid;
+  grid-template-columns: 3fr 6fr 4fr;
+  width: 100%;
+  height: 10rem;
+  background-color: hsl(200, 22%, 89%);
+}
+
+.footer-logo {
+  height: 3rem;
+  margin: auto 5rem auto 5rem;
+}
+
+.footer-links {
+  margin: auto 0rem;
+  display: grid;
+  grid-template-columns: 4fr 4fr 4fr;
+  grid-template-rows: 6fr 6fr;
+}
+
+.footer-link{
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
+.footer-social{
+  margin: auto;
+}
+
+.social-icon {
+  margin: 0 1rem;
 }
